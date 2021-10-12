@@ -1,0 +1,13 @@
+list1=[]
+posi_list=[]
+n=int(input("Enter the size of list : "))
+for i in range(n):
+    print("Enter the",i+1," number : ",end="")
+    num=float(input())
+    list1.append(num)
+    if list1[i]>0:
+        posi_list.append(list1[i])
+    elif list1[i]==0:
+        print("Zero is neither positive nor negative...!")
+print("The elements you entered are : ",list1)
+print("The positive numbers from the elements that you have entered : ",posi_list)
